@@ -6,14 +6,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MUJ-Sphere</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="Icon" href="mujlogo-removebg-preview.png" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 </head>
 <body>
-  <h1>MUJ Sphere</h1>
-  <h2>Welcome to Muj-Sphere</h2>
+  
+<header>
+  
+    <div id=logo>
+      <img src="maniNo.png" alt="manipal_logo" height="150px">
+    </div>
+    <nav id="nav">
+      <a href="#nav">HOME</a>
+      <a href="">KNOW US</a>
+      <select name="bookmarks" id="bookmarks" onchange="goToBookmark(this.value)" class="select">
+        <option value="" disabled selected hidden>STUDY MATERIAL</option>
+        <option value="">ABOUT US</option>
+        <option value="">FAQs</option>
+        <option value="">FEEDBACK </option>
+      </select>
+      
+      <select name="bookmarks" id="bookmarks" onchange="goToBookmark(this.value)" class="select">
+        <option value="" disabled selected hidden>CLUBS</option>
+        <option value="">About Me</option>
+        <option value="">FAQs</option>
+        <option value="">Feedback
+      </option>
+      </select>
+      
+     
 
-  <p>Hello</p>
+      <select name="bookmarks" id="bookmarks" onchange="goToBookmark(this.value)" class="select">
+        <option value="" disabled selected hidden>GENERAL</option>
+        <option value="">About Me</option>
+        <option value="">FAQs</option>
+        <option value="">Feedback
+      </option>
+      </select>
 
+      <a href="">CONTACT US</a>
+      
+    </nav>
+   <button id="mode"><i class="fa-regular fa-lightbulb"></i></button>
+  </header>
+
+  <div id="welcome">
+<h4><span id="welcomeSpanText1">Welcome to </span><br> <span id="welcomeSpanText2"> MUJ SPHERE...</span></h4>
+
+  </div>
+
+  <iframe src="latestUpdate.html" frameborder="0"  id="frameList"></iframe>
 
 
   <script src="script.js"></script>

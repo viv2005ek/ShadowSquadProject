@@ -1,4 +1,142 @@
-*{
+* {
   margin: 0;
   padding: 0;
+}
+
+header{
+  height: 100px;
+  display:flex;
+  align-items: center;
+  border: 1px solid transparent;
+  background-color:#f9e6c3 ;
+}
+
+
+#logo{
+  margin-right: 150px;
+}
+header a{
+  text-align: center;
+  margin:30px;
+  color:#321f28;
+  font-weight: bold;
+  text-decoration:None;
+  font-size:16px;
+  font-family: 'Roboto', sans-serif;
+}
+header a:hover{
+  font-size: 20px;
+  transition: all 0.1s ease-in-out;
+}
+
+.select{
+  margin:30px;
+  border-color: transparent;
+  background-color: transparent;
+  font-size:16px;
+  font-family: 'Roboto', sans-serif;
+  color:#321f28;
+  font-weight: bold;
+}
+.select:hover{
+  cursor: pointer;
+  font-size: 20px;
+  transition: all 0.1s ease-in-out;
+}
+#mode{
+  padding: 10px;
+  border-radius: 13px;
+  font-size: 25px;
+   position: fixed; 
+  right:15px;
+  border: 1px solid transparent;
+  background-color:transparent ;
+}
+
+button:hover{
+  background-color: gray; 
+  color:whitesmoke;
+  transform: scale(1.08);
+  cursor:pointer;
+}
+button:focus {
+  background-color: #969695; 
+  color:whitesmoke;
+ transform: scale(1.04);
+}
+button:active {
+  background-color: #5c5c5b; 
+  color: white;
+  transform:scale(0.9);
+}
+
+ #mode:hover{
+   color:grey;
+ }
+#mode:focus{
+  color:black;
+}
+#mode:active{
+  color:black;
+}
+#welcome{
+  font-size:60px;
+  font-weight:lighter;
+ font-family: mv Boli;
+  height:450px;
+  background-size: contain;
+  background-image: url("Hero-Banner.jpg");
+  color:#e7700d;
+  background-repeat: no-repeat;
+}
+#welcomeSpanText1{
+  position: relative;
+  left:20px;
+}
+#welcomeSpanText2{
+  font-size: 100px;
+  font-weight: bold;
+  font-family: CAMBRIA;
+  color:maroon;
+  position: relative;
+  left:20px;
+}
+
+
+#latest_update h1{
+  font-size: 40px;
+  font-weight: bold;
+  color: maroon;
+  margin: 0 0 10px 0;
+  background-color: white;
+  /* position: fixed; */
+  text-align: center;
+  
+}
+
+
+
+#latest_update{
+border: 1px solid black;
+  color:white;
+  background-color: maroon;
+  width:1000px;
+}
+
+#latest_update a{
+   color:cyan;
+}
+
+#latest_update_list{
+  font-size: 25px;
+}
+#frameList{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 1020px;
+  height:300px;
+  background-color: #f9e6c3;
+  margin:20px auto;
 }
