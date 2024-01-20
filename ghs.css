@@ -1,0 +1,23 @@
+.img1{
+    width: 400px;
+    height: 400px;
+    padding-top: 50px;
+    border: none;
+    border-radius: 60px 20px;
+    margin-left: 450px;
+}
+
+.img2{
+    width: 400px;
+    height: 400px;
+    margin-top: 50px;
+    border: none;
+    border-radius: 60px 20px;
+    margin-left: 450px;
+
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+
+}

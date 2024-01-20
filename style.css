@@ -9,11 +9,15 @@ header{
   align-items: center;
   border: 1px solid transparent;
   background-color:#f9e6c3 ;
+  position: fixed;
+  width:100%;
+  z-index: 1;
+  top:0;
 }
 
 
 #logo{
-  margin-right: 150px;
+  margin-right: 100px;
 }
 header a{
   text-align: center;
@@ -43,15 +47,7 @@ header a:hover{
   font-size: 20px;
   transition: all 0.1s ease-in-out;
 }
-#mode{
-  padding: 10px;
-  border-radius: 13px;
-  font-size: 25px;
-   position: fixed; 
-  right:15px;
-  border: 1px solid transparent;
-  background-color:transparent ;
-}
+
 
 button:hover{
   background-color: gray; 
@@ -61,7 +57,7 @@ button:hover{
 }
 button:focus {
   background-color: #969695; 
-  color:whitesmoke;
+  color:black;
  transform: scale(1.04);
 }
 button:active {
@@ -70,28 +66,28 @@ button:active {
   transform:scale(0.9);
 }
 
- #mode:hover{
-   color:grey;
- }
-#mode:focus{
-  color:black;
-}
-#mode:active{
-  color:black;
-}
 #welcome{
-  font-size:60px;
-  font-weight:lighter;
- font-family: mv Boli;
-  height:450px;
-  background-size: contain;
+  
+  height:550px;
+
   background-image: url("Hero-Banner.jpg");
-  color:#e7700d;
+  background-size: contain;
+ 
+  background-position: center;
   background-repeat: no-repeat;
+  margin-top: 50px;
+  
 }
 #welcomeSpanText1{
   position: relative;
+  top:40px;
+  /* top: 30%; */
   left:20px;
+  color:#e7700d;
+  background-repeat: no-repeat;
+  font-size:60px;
+    font-weight:lighter;
+   font-family: mv Boli;
 }
 #welcomeSpanText2{
   font-size: 100px;
@@ -101,34 +97,98 @@ button:active {
   position: relative;
   left:20px;
 }
+#welcomeSpanText3{
+  font-family:calibri light;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  position: relative;
+  left:20px;
+}
 
 
 #latest_update h1{
+  position: fixed; 
   font-size: 40px;
   font-weight: bold;
-  color: maroon;
+  color: black;
   margin: 0 0 10px 0;
   background-color: white;
-  /* position: fixed; */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   text-align: center;
-  
+  z-index: 1;
+  display: block;
+  width:1000px;
 }
+#latest_update l{
+  position: relative;
+ top:20px;
+}
+
+#mode{
+  height:30px;
+  width:30px;
+  font-size: 30px;
+  border:transparent;
+  background-color: transparent;
+  position: relative;
+  left:30px;
+}
+
+#mode :hover{
+  color:grey;
+}
+#mode :focus{
+  color:grey;
+}
+#mode :active{
+  color:black;
+}
+
+
+.parent{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 20px auto;
+  height: 500px;
+  width:1300px;
+  border: 1px solid transparent;
+  align-content: center;
+}
+.child{
+  height:400px;
+  width:300px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.gchild{
+  height: 200px;
+  width:300px;
+  border: 1px solid black;
+}
+
+
 
 
 
 #latest_update{
 border: 1px solid black;
   color:white;
-  background-color: maroon;
+  background-color: #cfa172;
   width:1000px;
 }
 
 #latest_update a{
-   color:cyan;
+   color:white;
 }
 
 #latest_update_list{
   font-size: 25px;
+padding:10px;
 }
 #frameList{
   display: flex;
@@ -139,4 +199,111 @@ border: 1px solid black;
   height:300px;
   background-color: #f9e6c3;
   margin:20px auto;
+}
+#random_pic{
+  display:flex;
+  justify-content: center;
+}
+#pic1{
+  background-image: url("randomPic.jpg");
+}
+#pic2{
+  background-image: url("randomPic1.jpg");
+}
+#pic3{
+  background-image: url("randomPic2.jpg");
+}
+.mujPic{
+  margin-top: 20px;
+  height: 400px;
+  width:100px;
+  border: 1px solid black;
+  background-size: cover;
+  border-radius: 15%;
+  opacity: 70%;
+}
+.mujPic:hover{
+  height: 300px;
+  width:200px;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+  opacity: 100%;
+  margin:30px;
+}
+
+#FAQ{
+  margin-left: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.child{
+  border-radius: 30px;
+  background-color: grey;
+  color:white;
+
+
+}
+#gchild1{
+  background-image: url("notes.webp");
+  border-radius: 30px;
+  background-size: cover;
+}
+#gchild2{
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  border: transparent;
+  position: relative;
+  top:30px;
+}
+#gchild3{
+  background-image: url("lecture-video.jpg");
+  border-radius: 30px;
+  background-size: cover;
+}
+#gchild4{
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  border: transparent;
+  position: relative;
+  top:35px;
+}
+#gchild5{
+  background-image: url("assignment-logo.png");
+  border-radius: 30px;
+  background-size: cover;
+}
+#gchild6{
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  border: transparent;
+  position: relative;
+  top:35px;
+}
+
+#gchild1:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  
+}
+#gchild3:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+#gchild5:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+#gchild1:active{
+  transform: scale(0.9);
+}
+
+#gchild3:active{
+  transform: scale(0.9);
+}
+
+#gchild5:active{
+  transform: scale(0.9);
 }
