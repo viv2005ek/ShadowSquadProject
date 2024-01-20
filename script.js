@@ -3,16 +3,17 @@
 let mode = "light";
 
 let mod = document.querySelector("#mode");
-document.body.style.backgroundImage="url(whiteDesginBack.jpg)";
+document.body.style.backgroundImage="url(light.jpg)";
+let FAQs=document.querySelector("#FAQs");
 
 mod.addEventListener("click", (e) => {
   if (mode == "light") {
     mode = "dark";
-document.body.style.backgroundImage="url(blackDesginBack.jpg)";
-  } else {
+// document.body.style.backgroundImage="url(pxfuel(1).jpg)";
+    document.body.style.backgroundImage="url(dark.jpg)";
+  }  else {
     mode = "light";
-document.body.style.backgroundImage="url(vinisha_delete.jpg)";
-
+document.body.style.backgroundImage="url(light.jpg)";
   }
 });
 

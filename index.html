@@ -1,136 +1,194 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MUJ-Sphere</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="Icon" href="mujlogo-removebg-preview.png" >
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MUJ-Sphere</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="Icon" href="mujlogo-removebg-preview.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <img src="maniNo.png" alt="manipal_logo" height="150px" />
+      </div>
+      <nav id="nav">
+        <a href="">HOME</a>
+        <a href="GHS.html" target="_blank">GHS HOSTEL</a>
 
-</head>
-<body>
-  
-<header>
-  
-    <div id=logo>
-      <img src="maniNo.png" alt="manipal_logo" height="150px">
+        <a href="#aca">ACADEMICS </a>
+
+        <a href="https://www.randomizemuj.com/" target="_blank">RANDOMIZE </a>
+
+        <select
+          name="bookmarks"
+          id="bookmarks"
+          onchange="goToBookmark(this.value)"
+          class="select"
+        >
+          <option value="" disabled selected hidden>GENERAL</option>
+
+          <option value="">Know Us</option>
+
+          <option value="#FAQ">FAQs</option>
+          <!-- <option value="">Feedback</option> -->
+        </select>
+
+        <a href="#contact">CONTACT US</a>
+      </nav>
+      <button id="mode"><i class="fa-regular fa-lightbulb"></i></button>
+    </header>
+
+    <div id="welcome">
+      <h4>
+        <span id="welcomeSpanText1">Welcome to </span><br />
+        <span id="welcomeSpanText2"> MUJ SPHERE...</span> <br /><span
+          id="welcomeSpanText3"
+          ><br />
+          <br />
+          <br />
+          Discover a new way to stay connected with<br />
+          the MUJ community through this Holistic website, featuring <br />
+          an interactive interface and a range of useful<br />
+          functionalities.</span
+        >
+      </h4>
     </div>
-    <nav id="nav">
-      <a href="#nav">HOME</a>
-      <a href="GHS.html" target="_blank">GHS Hostel</a>
-      
-     <a href="">Exam Preparation</a>
-      
-     <a href="">Randomize()</a>
-      
-     
 
-      <select name="bookmarks" id="bookmarks" onchange="goToBookmark(this.value)" class="select">
-        <option value="" disabled selected hidden>GENERAL</option>
+    <h1
+      style="
+        font-size: 40px;
+        margin-left: 25px;
+        font-family: arial;
+        text-align: center;
+        color: rgb(165, 42, 42);
+      "
+    >
+      <b>Just one step behind</b>
+    </h1>
+    <h1
+      style="
+        font-size: 40px;
+        margin-left: 25px;
+        font-family: arial;
+        text-align: center;
+        color: black;
+      "
+    >
+      <b> success</b>
+    </h1>
+    <p
+      style="
+        color: rgb(78, 73, 73);
+        font-family: arial;
+        font-size: 20px;
+        text-align: center;
+      "
+    >
+      This is a place where you can get everything related to<br />
+      student's need in MUJ. Handwritten notes,video lectures, assignments, and
+      <br />much more all available at one place.
+    </p>
 
-        <option value="">Know Us</option>
+    <div class="parent" id="aca">
+      <div class="child">
+        <a href=""></a>
+        <div class="gchild" id="gchild1"></div>
+        <div class="gchild" id="gchild2" style="color: blue">
+          <a href="https://www.mujcentral.in/pyq" target="_blank" style="color: brown; text-decoration: none;">Previous Year Question Paper</a>
+        </div>
+      </div>
+      <div class="child">
+        <div class="gchild" id="gchild3"></div>
+        <div class="gchild" id="gchild4">
+          <a href="Video.html" target="_blank" style="color: brown;text-decoration: none;">Video Lectures</a>
+        </div>
+      </div>
+      <div class="child">
+        <div class="gchild" id="gchild5"></div>
+        <div class="gchild" id="gchild6">
+          <a href="HandWritten.html" target="_blank" style="color: brown;text-decoration: none;">Lecture Notes </a>
+        </div>
+      </div>
+    </div>
 
-        <option value="#FAQ">FAQs</option>
-        <option value="">Feedback</option>
-      </select>
-      
+    <iframe src="latestUpdate.html" frameborder="0" id="frameList"></iframe>
 
+    <fieldset id="FAQ" style="border: none;">
+      <legend>
+        <i class="fa-solid fa-question" style="color: black; font-size: 40px;"></i
+        ><span style="font-size: 30px; padding-bottom: 15px;">&nbsp;&nbsp;&nbsp;FAQs  :-</span>
+      </legend>
+      <details style="font-size: 20px; font-family: arial; padding-bottom: 10px;">
+        <summary>
+          <h3 style="display: inline">
+            &nbsp;Are these video lecture helpful for students?
+          </h3>
+        </summary>
+        A:- Yes, As in these seniors tell you the important as well as most
+        frquently asked question also.
+      </details >
+      <details style="font-size: 20px; font-family: arial ; padding-bottom: 10px;">
+        <summary>
+          <h3 style="display: inline">
+            &nbsp;Are these notes relevent to the topic tought in class?
+          </h3>
+        </summary>
+        A:- Yes, they are relevent to the topic tought in class.
+      </details >
+      <details style="font-size: 20px; font-family: arial ; padding-bottom: 10px;">
+        <summary>
+          <h3 style="display: inline">
+            &nbsp;Are all the numbers given in the outlet still working or not?
+          </h3>
+        </summary>
+        A:- All are correctly working.
+      </details >
+      <details style="font-size: 20px; font-family: arial ; padding-bottom: 10px;">
+        <summary>
+          <h3 style="display: inline">&nbsp;How are the placements of MUJ?</h3>
+        </summary>
+        A:- yes,the placements of MUJ are very good.
+      </details>
+    </fieldset>
 
-      <a href="">CONTACT US</a>
-      
-    </nav>
-   <button id="mode"><i class="fa-regular fa-lightbulb"></i></button>
-  </header>
+    <div
+      id="contact"
+      style="
+        background-color: white;
+        height: 230px;
+        box-shadow: 4px black;
+        font-size: 17px;
+        display: flex;
+        justify-content: space-around;
+      "
+    >
+      <div class="contact1" style="padding-top: 35px; margin-top: 25px">
+        <h3 style="color: rgb(53, 52, 52); margin-left: 60px">
+          Manipal University Jaipur
+        </h3>
+        <p style="margin-left: 60px; color: rgb(91, 87, 87)">
+          RHR6+MX2, Manipal University Rd, <br />
+          Dahmi Kalan, <br />
+          Jaipur, <br />
+          Rajasthan 303007
+        </p>
+      </div>
 
-  <div id="welcome">
-<h4><span id="welcomeSpanText1">Welcome to </span><br> <span id="welcomeSpanText2"> MUJ SPHERE...</span> <br><span id="welcomeSpanText3"><br>
-<br>
-  <br>
-Discover a new way to stay connected with<br> the MUJ community through the Holistic App,  featuring <br> an interactive interface and a range of useful<br> functionalities.</span></h4>
+      <div class="contact2" style="padding-top: 35px; margin-top: 25px">
+        <h3 style="color: rgb(53, 52, 52); margin-left: 60px">Contact us:</h3>
+        <p style="margin-left: 60px; color: rgb(91, 87, 87)">
+          phone no: 12340 56789 <br />
+          e-mail id: manipaluniversityjaipur@gmail.com
+        </p>
+      </div>
+    </div>
 
-  </div>
-
-
-<h1 style="font-size: 40px;margin-left: 25px;font-family: arial;text-align: center;color:rgb(165,42,42)">
-  <b>Just one step behind</b></h1>
-<h1 style="font-size: 40px;margin-left: 25px;font-family: arial;text-align: center;color:black;">
-  <b> success</b></h1>
-  <p style="color:rgb(78,73,73);font-family: arial;font-size: 20px;text-align: center;">
-    This is a place where you can get everything related to<br> student's need in MUJ. Handwritten notes,video lectures, assignments, and <br>much more all available at one place.
-  </p>
-  
-<div class="parent">
-<div class="child">
-  <a href=""></a>
-  <div class="gchild" id="gchild1"></div>
-  <div class="gchild" id="gchild2">Previous Year Question Paper <a href="">Link</a></div>
-</div>
-<div class="child">
-  <div class="gchild" id="gchild3"></div>
-  <div class="gchild" id="gchild4">Video Lectures <a href="">Link</a></div>
-</div>
-<div class="child">
-  <div class="gchild" id="gchild5"></div>
-  <div class="gchild" id="gchild6">Assignment <a href="">Link</a></div>
-</div>
-
-
-
-
-
-  
-</div>
-  
-  <iframe src="latestUpdate.html" frameborder="0"  id="frameList"></iframe>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  
-    
-   <fieldset id="FAQ">
-     <legend><i class="fa-solid fa-clipboard-question" style="color: black;"></i><span>&nbsp;</span>FAQs</legend>
-  <details>
-    <summary><h3 style="display: inline;"> Are these video lecture helpful for students?</h3> </summary>
-    A:- Yes, As in these seniors tell you the important as well as most frquently asked question also.
-    </details>
-   <details> <summary> <h3 style="display: inline;"> Are these notes relevent to the topic tought in class?</h3></summary>
-    A:- Yes, they are relevent to the topic tought in class.
-     </details>
-    <details><summary> <h3 style="display: inline;"> Are all the numbers given in the outlet still working or not?</h3></summary>
-    A:- All are correctly working.
-  </details>
-  <details>
-    <summary>
-      <h3 style="display: inline;"> How are the placements of MUJ? </h3> </summary>
-      A:- yes,the placements of MUJ are very good.
-  </details>
-</fieldset>
-
-
-  
-     
-
-
-  <script src="script.js"></script>
- 
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

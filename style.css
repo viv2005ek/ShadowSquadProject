@@ -3,112 +3,121 @@
   padding: 0;
 }
 
-header{
+header {
   height: 100px;
-  display:flex;
+  display: flex;
   align-items: center;
   border: 1px solid transparent;
-  background-color:#f9e6c3 ;
+  background-color: #f9e6c3;
   position: fixed;
-  width:100%;
+  width: 100%;
   z-index: 1;
-  top:0;
+  top: 0;
 }
 
 
-#logo{
+#logo {
   margin-right: 100px;
 }
-header a{
+
+header a {
   text-align: center;
-  margin:30px;
-  color:#321f28;
+  margin: 30px;
+  color: #321f28;
   font-weight: bold;
-  text-decoration:None;
-  font-size:16px;
+  text-decoration: None;
+  font-size: 16px;
   font-family: 'Roboto', sans-serif;
 }
-header a:hover{
+
+header a:hover {
   font-size: 20px;
   transition: all 0.1s ease-in-out;
 }
 
-.select{
-  margin:30px;
+.select {
+  margin: 30px;
   border-color: transparent;
   background-color: transparent;
-  font-size:16px;
+  font-size: 16px;
   font-family: 'Roboto', sans-serif;
-  color:#321f28;
+  color: #321f28;
   font-weight: bold;
 }
-.select:hover{
+
+.select:hover {
   cursor: pointer;
   font-size: 20px;
   transition: all 0.1s ease-in-out;
 }
 
 
-button:hover{
-  background-color: gray; 
-  color:whitesmoke;
+button:hover {
+  background-color: gray;
+  color: whitesmoke;
   transform: scale(1.08);
-  cursor:pointer;
-}
-button:focus {
-  background-color: #969695; 
-  color:black;
- transform: scale(1.04);
-}
-button:active {
-  background-color: #5c5c5b; 
-  color: white;
-  transform:scale(0.9);
+  cursor: pointer;
 }
 
-#welcome{
-  
-  height:550px;
+button:focus {
+  background-color: #969695;
+  color: black;
+  transform: scale(1.04);
+}
+
+button:active {
+  background-color: #5c5c5b;
+  color: white;
+  transform: scale(0.9);
+}
+
+#welcome {
+
+  height: 550px;
 
   background-image: url("Hero-Banner.jpg");
   background-size: contain;
- 
+
   background-position: center;
   background-repeat: no-repeat;
   margin-top: 50px;
-  
+
 }
-#welcomeSpanText1{
+
+#welcomeSpanText1 {
   position: relative;
-  top:40px;
+  top: 40px;
   /* top: 30%; */
-  left:20px;
-  color:#e7700d;
+  left: 20px;
+  color: #e7700d;
   background-repeat: no-repeat;
-  font-size:60px;
-    font-weight:lighter;
-   font-family: mv Boli;
+  font-size: 60px;
+  font-weight: lighter;
+  font-family: mv Boli;
 }
-#welcomeSpanText2{
+
+#welcomeSpanText2 {
   font-size: 100px;
   font-weight: bold;
   font-family: CAMBRIA;
-  color:maroon;
+  color: maroon;
   position: relative;
-  left:20px;
+  left: 20px;
 }
-#welcomeSpanText3{
-  font-family:calibri light;
+
+#welcomeSpanText3 {
+  font-family: calibri light;
   color: white;
   font-size: 22px;
   font-weight: bold;
   position: relative;
-  left:20px;
+  left: 20px;
+
 }
 
 
-#latest_update h1{
-  position: fixed; 
+#latest_update h1 {
+  position: fixed;
   font-size: 40px;
   font-weight: bold;
   color: black;
@@ -118,192 +127,187 @@ button:active {
   text-align: center;
   z-index: 1;
   display: block;
-  width:1000px;
-}
-#latest_update l{
-  position: relative;
- top:20px;
+  width: 1000px;
 }
 
-#mode{
-  height:30px;
-  width:30px;
+#latest_update l {
+  position: relative;
+  top: 20px;
+}
+
+#mode {
+  height: 30px;
+  width: 30px;
   font-size: 30px;
-  border:transparent;
+  border: transparent;
   background-color: transparent;
   position: relative;
-  left:30px;
+  left: 30px;
 }
 
-#mode :hover{
-  color:grey;
+#mode :hover {
+  color: grey;
 }
-#mode :focus{
-  color:grey;
+
+#mode :focus {
+  color: grey;
 }
-#mode :active{
-  color:black;
+
+#mode :active {
+  color: black;
 }
 
 
-.parent{
+.parent {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
   margin: 20px auto;
   height: 500px;
-  width:1300px;
+  width: 1300px;
   border: 1px solid transparent;
   align-content: center;
 }
-.child{
-  height:400px;
-  width:300px;
+
+.child {
+  height: 300px;
+  width: 300px;
   border: 1px solid black;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.gchild{
+
+.gchild {
   height: 200px;
-  width:300px;
+  width: 300px;
+  border: 2px solid black;
+}
+
+
+
+
+
+#latest_update {
   border: 1px solid black;
-}
-
-
-
-
-
-#latest_update{
-border: 1px solid black;
-  color:white;
+  color: white;
   background-color: #cfa172;
-  width:1000px;
+  width: 1000px;
 }
 
-#latest_update a{
-   color:white;
+#latest_update a {
+  color: white;
 }
 
-#latest_update_list{
+#latest_update_list {
   font-size: 25px;
-padding:10px;
+  padding: 10px;
 }
-#frameList{
+
+#frameList {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   width: 1020px;
-  height:300px;
+  height: 300px;
   background-color: #f9e6c3;
-  margin:20px auto;
+  margin: 20px auto;
 }
-#random_pic{
-  display:flex;
+
+#random_pic {
+  display: flex;
   justify-content: center;
 }
-#pic1{
+
+#pic1 {
   background-image: url("randomPic.jpg");
 }
-#pic2{
+
+#pic2 {
   background-image: url("randomPic1.jpg");
 }
-#pic3{
+
+#pic3 {
   background-image: url("randomPic2.jpg");
 }
-.mujPic{
+
+.mujPic {
   margin-top: 20px;
   height: 400px;
-  width:100px;
+  width: 100px;
   border: 1px solid black;
   background-size: cover;
   border-radius: 15%;
   opacity: 70%;
 }
-.mujPic:hover{
+
+.mujPic:hover {
   height: 300px;
-  width:200px;
+  width: 200px;
   transition: all 0.1s ease-in-out;
   cursor: pointer;
   opacity: 100%;
-  margin:30px;
+  margin: 30px;
 }
 
-#FAQ{
+#FAQ {
   margin-left: 10px;
   padding: 10px;
   margin-bottom: 10px;
 }
-.child{
+
+.child {
   border-radius: 30px;
-  background-color: grey;
-  color:white;
-
-
+  color: black;
 }
-#gchild1{
+
+#gchild1 {
   background-image: url("notes.webp");
   border-radius: 30px;
   background-size: cover;
 }
-#gchild2{
+
+#gchild2 {
   font-size: 25px;
   font-weight: bold;
   text-align: center;
   border: transparent;
   position: relative;
-  top:30px;
+  top: 30px;
+  height: 100px;
 }
-#gchild3{
+
+#gchild3 {
   background-image: url("lecture-video.jpg");
   border-radius: 30px;
   background-size: cover;
 }
-#gchild4{
+
+#gchild4 {
   font-size: 25px;
   font-weight: bold;
   text-align: center;
   border: transparent;
   position: relative;
-  top:35px;
+  top: 35px;
+  height: 100px;
 }
-#gchild5{
-  background-image: url("assignment-logo.png");
+
+#gchild5 {
+  background-image: url("Notes-app-icon.jpg");
   border-radius: 30px;
-  background-size: cover;
+  background-size: contain;
+
 }
-#gchild6{
+
+#gchild6 {
   font-size: 25px;
   font-weight: bold;
   text-align: center;
   border: transparent;
   position: relative;
-  top:35px;
-}
-
-#gchild1:hover{
-  cursor: pointer;
-  transform: scale(1.1);
-  
-}
-#gchild3:hover{
-  cursor: pointer;
-  transform: scale(1.1);
-}
-#gchild5:hover{
-  cursor: pointer;
-  transform: scale(1.1);
-}
-#gchild1:active{
-  transform: scale(0.9);
-}
-
-#gchild3:active{
-  transform: scale(0.9);
-}
-
-#gchild5:active{
-  transform: scale(0.9);
+  top: 35px;
+  height: 100px;
 }
